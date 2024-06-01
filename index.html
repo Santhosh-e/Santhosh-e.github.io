@@ -20,6 +20,13 @@
             padding: 3em 0;
             text-align: center;
             animation: fadeIn 2s ease-in-out;
+            position: relative;
+        }
+        header img {
+            width: 100px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
         }
         nav {
             display: flex;
@@ -83,11 +90,19 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        .cube {
+            width: 300px;
+            height: 300px;
+            background-image: url('/mnt/data/image.png');
+            background-size: cover;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Un recognizable - Santhosh E</h1>
+        <img src="/mnt/data/image.png" alt="3D Cube">
     </header>
     <nav>
         <a href="#about">About Me</a>
